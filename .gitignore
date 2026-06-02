@@ -1,0 +1,31 @@
+# --- Python 环境与依赖 ---
+# 忽略 uv 创建的虚拟环境目录
+.venv/
+# 忽略 uv 的锁定文件（如果你想在 Git 中追踪依赖版本，可以删除下面这一行）
+# uv.lock 
+# 忽略 python 编译后的字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- IDE 配置 ---
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+
+# --- 操作系统临时文件 ---
+.DS_Store
+Thumbs.db
+
+# --- 模型/数据缓存 (非常重要！) ---
+# AI 项目常有大模型权重，建议不要上传到 Git
+# 如果你使用 Hugging Face 的默认缓存路径，建议在本地管理
+.cache/
+*.model
+*.pt
+*.bin
+*.onnx
+
+# --- 个人配置 ---
+.env
